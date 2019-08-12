@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Application\Master\MasterDepartment.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -183,6 +184,13 @@
     <Content Include="Bundle.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\Master\MasterDepartment.aspx.designer.vb">
+      <DependentUpon>MasterDepartment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Application\Master\MasterDepartment.aspx.vb">
+      <DependentUpon>MasterDepartment.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.vb" />
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="About.aspx.designer.vb">
@@ -214,6 +222,7 @@
     </Compile>
     <Compile Include="MasterPage.Master.vb">
       <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -288,7 +297,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Application\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
